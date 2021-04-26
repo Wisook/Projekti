@@ -3,7 +3,7 @@ window.onload = function() {
 }
 
 function Stats() {
-	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/117')
+	fetch('https://coronavirus-tracker-api.herokuapp.com/v2/locations/118')
 	.then(function(resp) { 
         return resp.json() 
     })
@@ -21,5 +21,7 @@ function Stats() {
 	.catch(function() {
 		console.log("error");
 	})
-	setTimeout(Stats, 20000000)
 }
+function refreshPage(){
+    window.location.reload();
+} 
